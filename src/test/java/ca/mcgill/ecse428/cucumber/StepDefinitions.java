@@ -2,7 +2,6 @@ package ca.mcgill.ecse428.cucumber;
 
 import ca.mcgill.ecse428.User;
 import cucumber.annotation.Before;
-import cucumber.annotation.en.And;
 import cucumber.annotation.en.Given;
 import cucumber.annotation.en.Then;
 import cucumber.annotation.en.When;

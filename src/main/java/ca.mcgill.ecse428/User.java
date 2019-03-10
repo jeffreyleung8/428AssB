@@ -42,13 +42,10 @@ public class User {
 
     //Elements
     private final String EMAIL_ELEMENT = "tr.zA.yO.byw";
-//    private final String EMAIL_ELEMENT = "table[class='F cf zt']";
     private final String SENT_BOX = "span.aT";
     private final String SENT_NOTIFICATION = "span.bAq";
-//  private final String FILE_LINK = "a[class='dO']";
     private final String FILE_LINK = "div[class='vI']";
     private final String PROGRESS_BAR = "div[class='dQ']";
-    private final String SENT_TABLE = "table[class='F cf zt']";
 
     //Constructor
     public User(String emailAddress,String password){

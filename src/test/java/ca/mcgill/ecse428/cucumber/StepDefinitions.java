@@ -28,6 +28,7 @@ public class StepDefinitions {
         user = new User(EMAIL_ADDRESS,PASSWORD);
     }
 
+
     @Given ("^I am logged in to gmail$")
     public void login(){
         try {
@@ -60,7 +61,7 @@ public class StepDefinitions {
         }
 
     }
-    @When("^I send an email to \"([^\"]*)\"$")
+    @When("^I send an email to valid \"([^\"]*)\"$")
     public void composeEmail(String recipientAddress){
         try {
             //Press Compose Button
@@ -116,7 +117,7 @@ public class StepDefinitions {
         }
     }
 
-    @Then ("^an email can be found in the sent folder to \"([^\"]*)\" with \"([^\"]*)\" attached with subject \"([^\"]*)\"$")
+    @Then ("^an email should be found in the sent folder to \"([^\"]*)\" with \"([^\"]*)\" attached with subject \"([^\"]*)\"$")
     public void emailConfirmation(String recipient,String file, String message){
         try{
             //See sent messages

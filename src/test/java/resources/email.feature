@@ -1,13 +1,11 @@
+Feature: Send email with file attachment
 
-
-Feature: gmail
-
-  Scenario Outline: Send an email with a file attachment
+  Scenario Outline: Send an email with a file attachment that is less than 25MB
     Given I am logged in to gmail
-    When I send an email to "<recipient>"
+    When I send an email to valid "<recipient>"
     And "<file>" is attached
     And "<message>" is the subject
-    Then an email can be found in the sent folder to "<recipient>" with "<file>" attached with subject "<message>"
+    Then an email should be found in the sent folder to "<recipient>" with "<file>" attached with subject "<message>"
 
 
     Examples:
@@ -17,6 +15,8 @@ Feature: gmail
       | yfanny002@yahoo.ca              | image3.png | Email#3 |
       | bico14497@hotmail.com           | image4.png | Email#4 |
       | jeffreyleung1801@hotmail.fr     | image5.png | Email#5 |
+
+
 
 
 
